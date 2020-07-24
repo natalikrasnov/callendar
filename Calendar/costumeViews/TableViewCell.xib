@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="VVI-gl-b0c" customClass="YearTableViewCell" customModule="Calendar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VVI-gl-b0c" id="ifv-dX-N2S">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="NcX-mB-3Pe">
+                        <rect key="frame" x="20" y="85" width="374" height="580"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="580" id="HR5-4U-6cy"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7eg-ZJ-0kO">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLE-TI-Grx">
+                        <rect key="frame" x="20" y="11" width="89" height="55"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="______________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErH-2s-gvt">
+                        <rect key="frame" x="20" y="32" width="374" height="48"/>
+                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ErH-2s-gvt" firstAttribute="trailing" secondItem="NcX-mB-3Pe" secondAttribute="trailing" id="1dk-Zh-70j"/>
+                    <constraint firstItem="NcX-mB-3Pe" firstAttribute="leading" secondItem="ifv-dX-N2S" secondAttribute="leadingMargin" id="EK9-Hh-RWb"/>
+                    <constraint firstItem="ErH-2s-gvt" firstAttribute="leading" secondItem="nLE-TI-Grx" secondAttribute="leading" id="IgT-CL-Vnz"/>
+                    <constraint firstItem="ErH-2s-gvt" firstAttribute="top" secondItem="ifv-dX-N2S" secondAttribute="topMargin" constant="21" id="KCZ-Lp-P6C"/>
+                    <constraint firstItem="NcX-mB-3Pe" firstAttribute="top" secondItem="nLE-TI-Grx" secondAttribute="bottom" constant="19" id="PJV-fx-el7"/>
+                    <constraint firstItem="ErH-2s-gvt" firstAttribute="trailing" secondItem="ifv-dX-N2S" secondAttribute="trailingMargin" id="PYp-DC-JQ5"/>
+                    <constraint firstItem="NcX-mB-3Pe" firstAttribute="top" secondItem="ErH-2s-gvt" secondAttribute="bottom" constant="5" id="Pf7-5c-LJN"/>
+                    <constraint firstItem="NcX-mB-3Pe" firstAttribute="trailing" secondItem="ifv-dX-N2S" secondAttribute="trailingMargin" id="Tv8-yd-kGa"/>
+                    <constraint firstItem="nLE-TI-Grx" firstAttribute="leading" secondItem="ifv-dX-N2S" secondAttribute="leadingMargin" id="dJo-2Q-ZmJ"/>
+                    <constraint firstItem="nLE-TI-Grx" firstAttribute="top" secondItem="ifv-dX-N2S" secondAttribute="topMargin" id="ng0-Zo-lWW"/>
+                    <constraint firstItem="NcX-mB-3Pe" firstAttribute="bottom" secondItem="ifv-dX-N2S" secondAttribute="bottomMargin" id="pIu-Jb-fkw"/>
+                    <constraint firstItem="ErH-2s-gvt" firstAttribute="leading" secondItem="ifv-dX-N2S" secondAttribute="leadingMargin" id="peQ-Ie-ABq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="colectionView" destination="NcX-mB-3Pe" id="Qls-Vc-Hlu"/>
+                <outlet property="title" destination="nLE-TI-Grx" id="z3u-7I-I8d"/>
+            </connections>
+            <point key="canvasLocation" x="153.62318840579712" y="251.78571428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
